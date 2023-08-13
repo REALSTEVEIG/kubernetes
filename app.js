@@ -4,7 +4,7 @@ const app = express();
 
 const port = 3000;
 
-app.get('/homw', (req, res) => {
+app.get('/home', (req, res) => {
   res.status(200).send('Home page!');
 });
 
