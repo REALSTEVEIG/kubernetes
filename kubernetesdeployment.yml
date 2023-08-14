@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: kubernetes-deployment
   labels:
-    app:kubernetes
+    app: kubernetes
 spec:
   replicas: 1
   selector:
@@ -12,10 +12,10 @@ spec:
   template:
     metadata:
       labels:
-      app: kubernetes
+        app: kubernetes
     spec:
-      container:
+      containers:
         - name: kubernetes
           image: realsteveig/kubernetes:latest
           ports:
-          - containerPort: 3000
+            - containerPort: 3000
