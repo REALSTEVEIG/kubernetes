@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: realstevekubernetes 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: realstevekubernetes
+  template:
+    metadata:
+      labels:
+        app: realstevekubernetes 
+    spec:
+      containers:
+        - name: realstevekubernetes 
+          image: onlyregistryhere.azurecr.io/realstevekubernetes
+          ports:
+          - containerPort: 3000
