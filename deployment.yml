@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: kubernetes
-          image: realsteveig/kubernetes:latest
+          image: onlyregistryhere/kubernetesthree:latest
           ports:
             - containerPort: 3000
