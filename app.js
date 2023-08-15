@@ -5,12 +5,12 @@ const app = express();
 const port = 3000;
 
 app.get('/home', (req, res) => {
-  console.log("hitting home page from azure pipeline")
+  console.log("hitting home page from azure pipeline!")
   res.status(200).send('Home page!');
 });
 
 app.get('/about', (req, res) => {
-    console.log("hitting about page from azure pipeline")
+    console.log("hitting about page from azure pipeline!")
     res.status(200).send('About page!');
 })
 
